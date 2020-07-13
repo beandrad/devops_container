@@ -4,7 +4,5 @@
 #-------------------------------------------------------------------------------------------------------------
 FROM ubuntu:20.04
 
-# RUN apt-get update \
-#     && export DEBIAN_FRONTEND=noninteractive \
-#     && apt-get -y install --no-install-recommends <your-package-list-here>
-
+RUN apt-get update \
+    && apt-get -y install --no-install-recommends
